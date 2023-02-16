@@ -1,0 +1,56 @@
+/* 
+  Crie um <header> de um site que contenha uma logo e um menu.
+  [x] - Um elemento devera ficar ao lado do outro
+  [x] - A logo que ficar na extrema esquerda e o menu ficar na extrema direita.
+  [x] - Os itens do menu ficaram um ao lado do outro, com um espaco de .8rem entre eles.
+  [x] - O ultimo elemento do menu sera um botao de contato e voce podera utilizar o 
+  seletor: last-child para estilizar
+*/
+
+body {
+  background: #282a36;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2rem 5rem;
+}
+
+img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+span {
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  
+  color: aliceblue;
+}
+
+nav span:nth-child(4) {
+  margin-right: 2rem;
+}
+
+button:last-child {
+  background: #A020F0;
+  border-radius: 5px;
+  padding: 10px;
+
+  width: 100px;
+  border: none;
+  font-weight: bold;
+
+  font-size: 16px;
+  color: white;
+}
